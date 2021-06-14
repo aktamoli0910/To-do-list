@@ -1,6 +1,14 @@
 const input= document.querySelector('input');
 const btn= document.querySelector('.addtask > button');
 
+const chk = document.getElementById('chk');
+
+chk.addEventListener('change', function() {
+	document.body.classList.toggle('dark');
+});
+
+
+
 btn.addEventListener('click', addlist);
 
 function addlist(e){
